@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #87CEFA;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #topo {
+            padding: 20px 25px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        #corpo {
+            width: 1000px;
+            background-color: #f4f4f4;
+            margin: 0 auto;
+            border-left: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+        }
+
+        #corpo #topo nav a {
+            text-decoration: none;
+            color: #333;
+
+        }
+
+        #corpo #topo nav a:hover {
+            color: #599;
+            text-decoration: underline;
+            transition: ease-in 0.3s;
+        }
+
+        #conteudo {
+            background-color: #f4f4f4;
+            padding: 20px 25px;
+        }
+
+        #conteudo article {
+            margin-bottom: 20px;
+        }
+
+        #conteudo article h2 a {
+            font-size: 22px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        #conteudo article h2 a:hover {
+            text-decoration: underline;
+        }
+
+        #conteudo article p {
+            font-size: 16px;
+            color: #222;
+            padding-left: 5px;
+            margin-top: 10px;
+        }
+
+        #conteudo section h1 {
+            color: #91c8f0;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        hr {
+            margin: 30px 0px;
+        }
+
+        .comments h2 {
+            margin-bottom: 15px;
+        }
+
+        .comments_results p {
+            margin-bottom: 15px;
+        }
+    </style>
+    <div id="corpo">
+        <div id="topo">
+            <nav>
+                <a href="/?pagina=home">Home</a> |
+                <a href="/?pagina=sobre">Sobre</a>
+            </nav>
+        </div>
+
+        <div id="conteudo">
+            {{dynamic_content}}
+        </div>
+    </div>
+</body>
+
+</html>

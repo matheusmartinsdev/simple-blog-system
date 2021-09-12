@@ -9,7 +9,7 @@ abstract class Connection
     public static function getConn()
     {
         if (!self::$conn) {
-            self::$conn = new \PDO('mysql: host=localhost; dbname=serie-criando-site;', 'root', 'root');
+            self::$conn = new \PDO('sqlite:./database/serie-criando-site.db');
         }
         return self::$conn;
     }

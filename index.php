@@ -7,7 +7,7 @@ require_once 'app/Model/Postagem.php';
 require_once 'app/Model/Comentario.php';
 require_once 'lib/Database/Connection.php';
 require_once 'vendor/autoload.php';
-
+//teste
 use \Core\Core;
 
 $template = file_get_contents('app/Template/estrutura.html');
